@@ -52,3 +52,8 @@ body.is-showingResult .searchSection-title {
 body.is-showingResult .searchSection-form {
 	transform: translate(200px, 0);
 }
+
+.searchResult {
+	max-width: 800px;
+	margin: 0 auto;
+}
