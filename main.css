@@ -85,3 +85,15 @@ body.is-showingResult .searchSection-form {
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
 }
+
+.searchResult-listItem {
+}
+.searchResult-title {
+	text-decoration: none;
+}
+.searchResult-title:hover {
+	text-decoration: underline;
+}
+.searchResult-url {
+	color: #090;
+}
