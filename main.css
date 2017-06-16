@@ -21,7 +21,7 @@ body {
 	position: fixed;
 	text-align: center;
 	transform: translate(calc(50vw - 200px / 2), calc(50vh - 50px));
-	transition: transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: transform 500ms;
 	width: 200px;
 }
 .searchSection-form {
@@ -52,9 +52,20 @@ body.is-showingResult .searchSection {
 }
 body.is-showingResult .searchSection-title {
 	transform: translate(0, 0);
+	transform-origin: left top;
 }
 body.is-showingResult .searchSection-form {
 	transform: translate(200px, 0);
+}
+
+body.is-showingResult .searchSection.is-minimized {
+	height: 30px;
+}
+body.is-showingResult .searchSection.is-minimized .searchSection-title {
+	transform: scale(0.5);
+}
+body.is-showingResult .searchSection.is-minimized .searchSection-form {
+	transform: scale(0.5) translate(0,-20px);
 }
 
 .searchResult {
