@@ -26,6 +26,14 @@
 		$('.js-resultList').prop('hidden', true);
 
 		setTimeout(()=>{
+			$('.js-resultList').children().each((index, el)=>{
+				const $el = $(el);
+				$el.addClass('is-hiddenItem');
+				setTimeout(()=>{
+					$el.removeClass('is-hiddenItem');
+				}, 50 * (index + 1));
+			});
+
 			$('.js-loading').prop('hidden', true);
 			$('.js-resultList').prop('hidden', false);
 		}, 3500);
