@@ -3,5 +3,6 @@
 		event.preventDefault();
 		$('body').addClass('is-showingResult');
 		$('.js-keyword').text($('.js-keyword').val());
+		$('.js-loading').prop('hidden', false);
 	});
 })();

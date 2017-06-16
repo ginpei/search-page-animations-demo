@@ -57,3 +57,31 @@ body.is-showingResult .searchSection-form {
 	max-width: 800px;
 	margin: 0 auto;
 }
+
+.loadingBlock {
+	position: relative;
+	margin: 0 auto;
+	width: 50px;
+}
+.loadingBlock-star {
+	animation: rolling 1000ms infinite;
+	display: inline-block;
+	height: 50px;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 50px;
+}
+.loadingBlock-star:nth-child(1) {
+	animation-delay: 100ms;
+	opacity: 0.5;
+}
+.loadingBlock-star:nth-child(2) {
+	animation-delay: 200ms;
+	opacity: 0.3;
+}
+@keyframes rolling {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
